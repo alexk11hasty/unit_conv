@@ -10,8 +10,11 @@ describe ("smoke test", () => {
 
 //specify what the code does
 describe("unit converter", () => {
-	expect(Newton(0,0)).toBe(0);
-	expect(celsius(0,0)).toBe(0);
-	expect(fahrenheit(0,0)).toBe(32);
-	expect(kelvin(0,0)).toBe(0);
+	it("can convert temperatures", () => {
+		expect(Newton(0,0)).toBe(0);
+		expect(celsius(0,0)).toBe(0);
+		expect(fahrenheit(0,0)).toBe(32);
+		expect(kelvin(0,0)).toBe(0);
+	})
+	
 });
