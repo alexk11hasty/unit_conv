@@ -1,0 +1,23 @@
+// Converts metric and other units to American units
+//Temperature
+// Define a function Kelvin
+let kelvin = (y,z) => {
+	return y + 273;
+};
+// Define a function Celsius 
+let celsius = (x,y) => {
+	return x;
+};
+// Define a function Fahrenheit
+let fahrenheit = (y,a) => {
+	return y * 9 / 5 + 32;
+};
+// Define a function Newton
+let Newton = (y,b) => {
+	return y * 33 / 100;
+// Print the corresponding values
+console.log(`The temperature is ${fahrenheit} degrees Fahrenheit`);
+console.log(`The temperature is ${celsius} degrees Celsius`);
+console.log(`The temperature is ${kelvin} degrees Kelvin`);
+console.log(`The temperature is ${Newton} degrees Newtons`);
+module.exports = celsius;
