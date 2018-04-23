@@ -1,5 +1,7 @@
 // import code to be tested
-const celsius = require('./unit converter');
+const unitsConverter = require('./unit_converter');
+
+let uc = unitsConverter();
 
 //smoke test
 describe ("smoke test", () => {
@@ -11,10 +13,9 @@ describe ("smoke test", () => {
 //specify what the code does
 describe("unit converter", () => {
 	it("can convert temperatures", () => {
-		expect(Newton(0,0)).toBe(0);
-		expect(celsius(0,0)).toBe(0);
-		expect(fahrenheit(0,0)).toBe(32);
-		expect(kelvin(0,0)).toBe(0);
-	})
+		expect(uc.cToF(0)).toBe(32);
+		expect(uc.cTok(0)).toBe(273);
+		expect(uc.cToN(0)).toBe(0);		
+	});
 	
 });
